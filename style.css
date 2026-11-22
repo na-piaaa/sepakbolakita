@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+  color: #172033;
+}
+
+/* HEADER */
+
+header {
+  background: #082b55;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* NAVIGASI */
+
+nav {
+  background: #064b91;
+  padding: 15px 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcf33;
+}
+
+/* BERANDA */
+
+.hero {
+  background: linear-gradient(135deg, #06366c, #087bba);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h2 {
+  color: white;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.tombol {
+  display: inline-block;
+  background: #ffcf33;
+  color: #10233d;
+  padding: 13px 20px;
+  margin-top: 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* BAGIAN KONTEN */
+
+section {
+  padding: 40px 7%;
+}
+
+section h2 {
+  color: #073b70;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.keterangan {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #566477;
+}
+
+.kumpulan {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 18px;
+}
+
+/* KARTU */
+
+.kartu {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000012;
+  line-height: 1.7;
+}
+
+.kartu h3 {
+  color: #07549b;
+  margin-bottom: 10px;
+}
+
+/* PENCARIAN */
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #b8c7d8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  outline-color: #087bba;
+}
+
+/* TOMBOL */
+
+button {
+  background: #07549b;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 7px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover,
+.tombol:hover {
+  opacity: 0.85;
+}
+
+/* LOGO KLUB */
+
+.kartu-klub {
+  text-align: center;
+}
+
+.logo-klub {
+  width: 115px;
+  height: 115px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* FOTO PEMAIN */
+
+.kartu-pemain {
+  text-align: center;
+}
+
+.foto-pemain {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* PAPAN SKOR */
+
+.kartu-skor {
+  border-left: 5px solid #087bba;
+}
+
+.kompetisi {
+  color: #087bba;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.baris-skor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.baris-skor strong {
+  font-size: 23px;
+  color: #07549b;
+}
+
+.status-skor {
+  text-align: center;
+  margin-top: 12px;
+  color: #16804a;
+  font-weight: bold;
+}
+
+/* KUIS */
+
+#areaKuis {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+}
+
+#areaKuis button {
+  width: 100%;
+  text-align: left;
+}
+
+/* FOOTER */
+
+footer {
+  background: #082b55;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  line-height: 1.8;
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 23px;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  section {
+    padding: 30px 5%;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
+}
+￼Enter
